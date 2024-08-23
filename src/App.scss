@@ -1,0 +1,181 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// body {
+//   background-color: #19192d;
+// }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hola {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor-ul  {
+    transition: 0.4s linear;
+}
+
+.items {
+    transition: 0.3s ease-in;
+}
+
+.on {
+    background-color: #475569;
+}
+
+.contenedor-headers {
+    transition: 0.3s linear;
+}
+  
+  .contenedor-presentacion {
+    display: flex;
+    flex-flow: column wrap;
+    width: 95%;
+    position: relative;
+  }
+  
+  .contenedor-interior-presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .parte-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .btn-disponible {
+    background-color: #322e52;
+    color: white;
+    border: solid 1px rgb(38, 104, 38);
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin: 5px;
+  }
+  
+  .image-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+
+  
+  .parte-2 {
+    position: relative;
+    right: 7px;
+    margin-top: 6px;
+    display: flex;
+
+  }
+  
+  .btn-1 {
+    background-color: rgb(31 41 55);
+    color: white;
+    font-size: 15px;
+    border: solid 1px rgb(38, 104, 38);
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin: 5px;
+  }
+  
+  .uno {
+    margin: 10px 0;
+  }
+  
+  .item-presentacion {
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+  .size-4 {
+    width: 40px;
+    height:100%;
+    color: white;
+  }
+
+
+  .active {
+    color: black;
+  }
+
+  .thiagoelias {
+    transform: rotate(3deg);
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    align-items: center;
+
+  }
+
+
+
+  @media (width < 768px) {
+    .contenedor-presentacion {
+      margin: auto;
+      // top: 10px;
+    }
+
+    .btn-disponible {
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-size: 15px;  
+    }
+
+    .btn-1 {
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size:16px ;
+    }
+    
+    .parte-2 {
+      display: inline-flex;
+      height: 60px;
+
+    }
+    .size-4 {
+      width: 60px;
+      height:100%;
+      color: white;
+    }
+  
+  }
+
+  @media (width > 768px) {
+  .contenedor-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  }
+  
+  @media (width < 767px) {
+    .contenedor-interior-presentacion {
+      justify-content: center;
+    }   
+  }
+  
+
+  @media (width < 640px) {
+    .contenedor-interior-presentacion {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
